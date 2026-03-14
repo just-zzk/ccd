@@ -23,6 +23,9 @@ ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 ccd_3_14\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -42,5 +45,9 @@ ccd_3_14\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers
 ccd_3_14\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 ccd_3_14\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 ccd_3_14\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+ccd_3_14\main.o: ../Core/Inc/adc.h
+ccd_3_14\main.o: ../Core/Inc/tim.h
 ccd_3_14\main.o: ../Core/Inc/usart.h
 ccd_3_14\main.o: ../Core/Inc/gpio.h
+ccd_3_14\main.o: ../Core/Inc/dma.h
+ccd_3_14\main.o: ../Core/Inc/tcd1304.h

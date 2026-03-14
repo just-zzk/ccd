@@ -22,6 +22,7 @@
 #include "task.h"
 #include "main.h"
 #include "cmsis_os.h"
+#include "tcd1304.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -114,10 +115,21 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-  /* Infinite loop */
+  uint16_t ccd_buffer[TCD1304_ACTIVE_PIXELS];
+  uint32_t integration_time = 10000;
+  
   for(;;)
   {
-    osDelay(1);
+    TCD1304_StartCapture(integration_time);
+    
+    while (!TCD1304_IsDataReady())
+    {
+      osDelay(1);
+    }
+    
+    TCD1304_GetActiveData(ccd_buffer);
+    
+    osDelay(100);
   }
   /* USER CODE END StartDefaultTask */
 }
